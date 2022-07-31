@@ -10,16 +10,39 @@
 	
 	<body>
 
-        
-        <script src = "JavaS/script.js"></script>
-        
-        <h1> Miss. Williams' Classroom </h1>
-
         <div class="container">
+            <h1> Miss. Williams' Class </h1>
+            <img src="IMG/Menu-2.png" class="menu-icon" onclick="openmenu()">
+                
+                <div class="Menu-box" id="menu">
+                    
+                    <div class="Right-Links">
 
-            <img src="IMG/Menu-2.png" class="menu-icon">
-        </div>
+                        <a href="#">Get started?</a>
+                        <img src="IMG/Close.png" class="close" onclick="closemenu()">
+
+                    </div>
+
+                    <div class = "menu-links">
+                        <a href="#">Home</a>
+                        <a href="#">This</a>
+                        <a href="#">That</a>
+                        <a href="#">something else</a>
+                        <a href="#">and this</a>
+                    </div>
+                </div> 
+
+            </div>
+        <script>
+                var menu = document.getElementById('menu');
         
+                    function closemenu() {
+                        menu.style.top = "-100vh";
+                    }
+                    function openmenu() {
+                        menu.style.top = "17%";
+                    }
+        </script>
 
 
   
